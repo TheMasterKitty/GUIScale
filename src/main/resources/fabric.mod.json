@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "guiscale",
+	"version": "1.0",
+	"name": "GUIScale",
+	"description": "Updated version of someaddon's GUIScale",
+	"authors": [
+		"someaddon",
+		"TheMasterKitty"
+	],
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"themasterkitty.guiscale.GUIScale"
+		],
+		"modmenu": [
+			"themasterkitty.guiscale.Config"
+		]
+	},
+	"mixins": [
+		{
+			"config": "guiscale.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": [ "1.14.4", "1.15.x", "1.16.x", "1.17.x", "1.18.x", "1.19.x", "1.20.x", "1.21.x" ],
+		"java": ">=8"
+	}
+}
